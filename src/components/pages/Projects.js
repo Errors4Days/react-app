@@ -6,6 +6,9 @@ import ProjectCards from '../ProjectCards';
 
 import P1 from '../assets/img/temp.jpg';
 import project1Img from '../project-posts/img/project1.png';
+import project2Img from '../project-posts/img/project2.png';
+import project3Img from '../project-posts/img/project3.png';
+
 
 class Projects extends Component {
 	componentDidMount() {
@@ -34,26 +37,26 @@ class Projects extends Component {
 
 						<ProjectCards
 							title="Python Maze Generator"
-							description="A Basic Maze Generator Built in Python"
-							to=""
-							image={P1}
+							description="A Basic Maze Generator Built in Python. It uses the Python turtle library and can be run from the terminal."
+							to="projects/project2"
+							image={project2Img}
 							alt="Maze Generator"
 						/>
 
 						<ProjectCards
 							title="Python Space Invaders"
-							description="Space Invaders Running in Python"
-							to=""
-							image={P1}
+							description="Space Invaders Running in Python. Relies on the Python Pygame library."
+							to="projects/project3"
+							image={project3Img}
 							alt="Space Invaders"
 						/>
 
 						<ProjectCards
 							title="An older website"
-							description="A static website on github pages"
-							to=""
+							description="My first website hosted on github pages. It is static but incorporates some neat features."
+							to="projects/project4"
 							image={P1}
-							alt="Space Invaders"
+							alt="Old Website"
 						/>
 					</div>
 				</div>

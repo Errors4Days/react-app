@@ -95,6 +95,7 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-position: center center;
+	height: 200px;
 }
 
 .card h2{
@@ -119,17 +120,15 @@ body {
 
 /* Project Posts */
 .project-image {
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: scroll;
-	background-position: center center;
-	height: 250px;
-	width: 500px;
+	display: block;
 	margin: auto auto;
+	height: 100%;
+	width: 500px;
 }
 
 .post-bullets {
 	margin-top: 5px;
+	padding-left: 0px;
 }
 
 .post-bullet {

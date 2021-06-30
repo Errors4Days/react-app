@@ -15,7 +15,7 @@ class ProjectPosts extends Component {
           <h2>{this.props.title}</h2>
           <p>{this.props.summary}</p>
           <p>{this.props.details}</p>
-          <div className="project-image" style={{backgroundImage: 'url("' + this.props.image + '")'}}/>
+          <img className="project-image" src={this.props.image}/>
 
           <h3 style={{ margin: '20px 0px 5px 0px  ' }}>Technology Used</h3>
           <ul className="post-bullets">
