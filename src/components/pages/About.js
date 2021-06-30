@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import ImageWithText from '../ImageWithText';
 import image from '../assets/img/header-about.jpg';
+import AboutCards from '../AboutCards'
 
 class About extends Component {
   componentDidMount() {
@@ -28,7 +29,12 @@ class About extends Component {
         <section className="textbox2">
           <div className="container">
             <h2>Proficient Technologies</h2>
-            
+            <div className="card-grid">
+              <AboutCards
+                language = "Python 3"
+              />
+              
+            </div>
           </div>
         </section>
       </div>

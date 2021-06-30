@@ -1,9 +1,12 @@
 import React, {Component} from 'react';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+ 
 import ImageWithText from '../ImageWithText';
 import image from '../assets/img/header-project.jpg';
 import ProjectCards from '../ProjectCards';
 
 import P1 from '../assets/img/temp.jpg';
+import PJ1 from '../project-posts/PJ1';
 
 class Projects extends Component {
 	componentDidMount() {
@@ -14,7 +17,7 @@ class Projects extends Component {
 			<div className="content">
 				<ImageWithText
 					title="My Projects"
-					subtitle="Browse through my past projects"
+					subtitle="Browse through my past projects."
 					image={image}
 				/>
 			 
@@ -24,7 +27,7 @@ class Projects extends Component {
 						<ProjectCards
 							title="Game Design Project"
 							description="A group project in Unity"
-							to=""
+							to="projects/temp"
 							image={P1}
 							alt="Game Design"
 						/>

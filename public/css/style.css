@@ -70,8 +70,6 @@ body {
 	text-align: center;
 	padding: 10px;
 }
-/* Home */
-
 
 /* About */
 
@@ -86,21 +84,36 @@ body {
 }
 
 .card {
-	border: var(--border1) 1px solid;
+	border: var(--main1) 1px solid;
+	border-radius: 5px;
+	min-width: 200px;
+	min-height: 400px;
 }
 
 .card-image {
 	width: 100%;
 	display: block;
+	border-radius: 5px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center center;
 }
 
 .card h2{
 	font-size: 24px;
 	margin-bottom: 0px;
+	padding: 0px 5px 0px 5px;
+}
+
+.card-link {
+	text-decoration: none;
+	color: var(--text1);
 }
 
 .card p{
 	margin-top: 5px;
+	padding: 0px 5px 0px 5px;
 }	
 
 /* Blog */
