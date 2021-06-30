@@ -8,6 +8,7 @@ import P1 from '../assets/img/temp.jpg';
 import project1Img from '../project-posts/img/project1.png';
 import project2Img from '../project-posts/img/project2.png';
 import project3Img from '../project-posts/img/project3.png';
+import project4Img from '../project-posts/img/project4.png';
 
 
 class Projects extends Component {
@@ -55,7 +56,7 @@ class Projects extends Component {
 							title="An older website"
 							description="My first website hosted on github pages. It is static but incorporates some neat features."
 							to="projects/project4"
-							image={P1}
+							image={project4Img}
 							alt="Old Website"
 						/>
 					</div>

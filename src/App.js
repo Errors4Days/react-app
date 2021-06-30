@@ -7,9 +7,11 @@ import About from "./components/pages/About";
 import Projects from "./components/pages/Projects";
 import Blog from "./components/pages/Blog";
 import Contact from "./components/pages/Contact";
+
 import Project1 from "./components/project-posts/Project1";
 import Project2 from "./components/project-posts/Project2";
 import Project3 from "./components/project-posts/Project3";
+import Project4 from "./components/project-posts/Project4";
 
 
 class App extends Component {
@@ -64,6 +66,12 @@ class App extends Component {
             exact={true}
             path="/projects/project3"
             component={Project3}
+          />
+
+          <Route
+            exact={true}
+            path="/projects/project4"
+            component={Project4}
           />
         </PageWrapper>
       </Router>

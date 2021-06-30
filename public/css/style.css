@@ -38,9 +38,6 @@ body {
 	padding-bottom: 10px;
 }
 
-/* Page Content */
-
-
 /* simple page title */
 .page-header {
 	text-align: center;
@@ -71,6 +68,24 @@ body {
 	padding: 10px;
 }
 
+/* About cards */
+.card-grid-A {
+	color: var(--text2);
+	margin: 50px auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 20px;
+}
+
+.card-A {
+	background-color: var(--textbk1);
+	color: var(--texth1hover);
+	border-radius: 2px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 /* Project cards */
 .card-grid{

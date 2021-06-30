@@ -29,12 +29,9 @@ class About extends Component {
         <section className="textbox2">
           <div className="container">
             <h2>Proficient Technologies</h2>
-            <div className="card-grid">
-              <AboutCards
-                language = "Python 3"
-              />
-              
-            </div>
+            <AboutCards 
+              list={["Python 3", "Java", "HTML", "CSS", "MySQL", "Unity", "React", "R"]}
+            />
           </div>
         </section>
       </div>

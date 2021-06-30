@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 
+// Template for creating a project page
 class ProjectPosts extends Component {
   render() {
     return(

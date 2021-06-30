@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 
+// Template for creating project card on the projects page
 class ProjectCard extends Component {
 	render() {
 		return(

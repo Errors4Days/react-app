@@ -3,9 +3,9 @@ import React, {Component} from 'react';
 class AboutCards extends Component{
   render() {
     return(
-      <div className="card">
-				<h2>{this.props.language}</h2>
-			</div>
+      <div className="card-grid-A">
+        {this.props.list.map((item) => <div className="card-A">{item}</div>)}      
+      </div>
     );
   }
 }
