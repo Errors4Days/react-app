@@ -6,7 +6,7 @@ import image from '../assets/img/header-project.jpg';
 import ProjectCards from '../ProjectCards';
 
 import P1 from '../assets/img/temp.jpg';
-import PJ1 from '../project-posts/PJ1';
+import project1Img from '../assets/img/temp.jpg';
 
 class Projects extends Component {
 	componentDidMount() {
@@ -20,14 +20,14 @@ class Projects extends Component {
 					subtitle="Browse through my past projects."
 					image={image}
 				/>
-			 
+
 			 <section>
 				 <div className="container">
 					<div className="card-grid">
 						<ProjectCards
 							title="Game Design Project"
 							description="A group project in Unity"
-							to="projects/temp"
+							to="projects/project1"
 							image={P1}
 							alt="Game Design"
 						/>

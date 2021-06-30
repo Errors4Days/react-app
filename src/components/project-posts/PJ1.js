@@ -4,9 +4,13 @@ import ProjectPost from '../ProjectPost';
 class PJ1 extends Component {
   render() {
     return(
-      <ProjectPost
-        title="test"
-      />
+      <div>
+        <ProjectPost
+          title="testing"
+        />
+      </div>
     );
   }
 }
+
+export default PJ1;
