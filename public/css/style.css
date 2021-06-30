@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+:root {
+	--main1: #2c2b30;
+	--texth1: #d6d6d6;
+	--texth1hover: #45a29e;
+	--border1: #45a29e;
+
+	--text1: #000000;
+	--textbk1: #ffffff;
+
+	--text2: #d6d6d6;
+	--textbk2: #2c2b30;
+}
+
+/* Global */
+body {
+	font: 20px/1.15 'Lato', sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: white;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.textbox1 {
+	color: var(--text1);
+	background: var(--textbk1);
+	padding-bottom: 10px;
+}
+
+.textbox2 {
+	color: var(--text2);
+	background: var(--textbk2);
+	padding-bottom: 10px;
+}
+
+/* Page Content */
+
+
+/* simple page title */
+.page-header {
+	text-align: center;
+}
+
+
+/* Image with Text */
+.image {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center center;
+	min-height: 500px;
+}
+
+.img-title {
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+	padding: 150px 20px 20px 20px;
+	vertical-align: middle;
+}
+
+.img-subtitle {
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px;
+}
+/* Home */
+
+
+/* About */
+
+
+/* Project cards */
+.card-grid{
+	margin: 50px auto;
+	max-width: 1200px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 20px;
+}
+
+.card {
+	border: var(--border1) 1px solid;
+}
+
+.card-image {
+	width: 100%;
+	display: block;
+}
+
+.card h2{
+	font-size: 24px;
+	margin-bottom: 0px;
+}
+
+.card p{
+	margin-top: 5px;
+}	
+
+/* Blog */
+
+
+/* Contact */
+#contact-form {
+	display: block;
+	margin: auto;
+}
