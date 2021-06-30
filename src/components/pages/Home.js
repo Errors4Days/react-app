@@ -12,7 +12,7 @@ class Home extends Component {
       <div className="content">
         <ImageWithText
           title="Welcome To My Website!"
-          subtitle="This is my personale website. Here you can find my projects, personal blog, and more."
+          subtitle="This is my personal website. Here you can find my projects, personal blog, and more."
           image={image}
         />
         <section className="textbox1">

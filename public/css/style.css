@@ -65,13 +65,11 @@ body {
 }
 
 .img-subtitle {
-	font-size: 25px;
+	font-size: 30px;
 	font-weight: bold;
 	text-align: center;
 	padding: 10px;
 }
-
-/* About */
 
 
 /* Project cards */
@@ -86,7 +84,6 @@ body {
 .card {
 	border: var(--main1) 1px solid;
 	border-radius: 5px;
-	min-width: 200px;
 	min-height: 400px;
 }
 
@@ -111,13 +108,36 @@ body {
 	color: var(--text1);
 }
 
+.card-link:hover {
+	color: var(--texth1hover)
+}
+
 .card p{
 	margin-top: 5px;
 	padding: 0px 5px 0px 5px;
 }	
 
-/* Blog */
+/* Project Posts */
+.back-button {
+	background-color: var(--main1);
+	height: 35px;
+	width: 75px;
+	margin-top: 24.9px;
+	border-radius: 2px;
+	border: none;
+	color: var(--texth1hover);
+	transition: 0.2s;
+}
 
+.back-button:hover {
+	cursor: pointer;
+	background-color: var(--texth1hover);
+	color: var(--texth1);
+}
+
+.back-link {
+	text-decoration: none;
+}
 
 /* Contact */
 #contact-form {
