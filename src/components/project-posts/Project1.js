@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ProjectPost from '../ProjectPost';
+import project1 from './img/project1.png';
 
 class Project1 extends Component {
   render() {
@@ -12,6 +13,10 @@ class Project1 extends Component {
           will be able to pick up various abilities."
           details="The game is powered by Unity engine. We wrote our own custom C# scripts. Many of the sprites and animations like
           the cat were custom made."
+
+          image={project1}
+          list={["Unity", "C#"]}
+          link="https://ecse-csds290.itch.io/the-purr-suit-of-the-drip-s2021-team-17"
         />
       </div>
     );

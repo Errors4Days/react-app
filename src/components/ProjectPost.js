@@ -15,6 +15,13 @@ class ProjectPosts extends Component {
           <h2>{this.props.title}</h2>
           <p>{this.props.summary}</p>
           <p>{this.props.details}</p>
+          <div className="project-image" style={{backgroundImage: 'url("' + this.props.image + '")'}}/>
+
+          <h3 style={{ margin: '20px 0px 5px 0px  ' }}>Technology Used</h3>
+          <ul className="post-bullets">
+            {this.props.list.map((item) => <li className="post-bullet">{item}</li>)}
+          </ul>
+          <a href={this.props.link}>Take a look!</a>
         </div>
       </div>
     );

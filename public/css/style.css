@@ -118,6 +118,24 @@ body {
 }	
 
 /* Project Posts */
+.project-image {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center center;
+	height: 250px;
+	width: 500px;
+	margin: auto auto;
+}
+
+.post-bullets {
+	margin-top: 5px;
+}
+
+.post-bullet {
+	list-style: none;
+}
+
 .back-button {
 	background-color: var(--main1);
 	height: 35px;

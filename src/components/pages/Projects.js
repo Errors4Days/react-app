@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
  
 import ImageWithText from '../ImageWithText';
 import image from '../assets/img/header-project.jpg';
