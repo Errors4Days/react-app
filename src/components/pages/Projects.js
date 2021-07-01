@@ -20,6 +20,7 @@ class Projects extends Component {
 				<ImageWithText
 					title="My Projects"
 					subtitle="Browse through my past projects."
+					icons={false}
 					image={image}
 				/>
 

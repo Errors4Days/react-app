@@ -14,6 +14,7 @@ class Home extends Component {
           title="Welcome To My Website!"
           subtitle="This is my personal website. Here you can find my projects, personal blog, and more."
           image={image}
+          icons={true}
         />
         <section className="textbox1">
           <div className="container">
@@ -33,7 +34,7 @@ class Home extends Component {
             <p>
               I built this website using the React JS framework along with HTML and CSS. Everything here is built from scratch including the 
               navbar. On the Projects page you can a see some of my noteworthy projects. I chose to use React JS for this website due
-              to React's modularity and built in features. 
+              to React's modularity and built in features. React renders in a new page instead of making a server request for the page.
             </p>
           </div>
         </section>

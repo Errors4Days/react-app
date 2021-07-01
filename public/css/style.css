@@ -45,6 +45,23 @@ body {
 
 
 /* Image with Text */
+.icons {
+	width: 500px;
+	margin: auto auto;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+}
+
+.icon {
+	color: black;
+}
+
+.icon:hover {
+	color: white;
+	cursor: pointer;
+}
+
 .image {
 	background-size: cover;
 	background-repeat: no-repeat;

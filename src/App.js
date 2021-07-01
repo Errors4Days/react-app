@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 
+import ScrollToTop from "./components/ScrollToTop";
 import PageWrapper from "./components/PageWrapper";
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
@@ -18,6 +19,7 @@ class App extends Component {
   render() {
     return(
       <Router>
+        <ScrollToTop/>
         <PageWrapper>
           <Route
             exact={true}

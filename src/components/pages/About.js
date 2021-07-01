@@ -13,6 +13,7 @@ class About extends Component {
         <ImageWithText
           title="Hi, I'm Justin"
           subtitle="Learn more about me on this page."
+          icons={true}
           image={image}
         />
         

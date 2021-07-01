@@ -16,6 +16,7 @@ class Blog extends Component {
           title="A Random Blog"
           subtitle=""
           image={image}
+          icons={false}
         />
         <h1>
           This section of the website is incomplete.
