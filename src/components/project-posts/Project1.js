@@ -15,6 +15,7 @@ class Project1 extends Component {
           the cat were custom made."
 
           image={project1}
+          alt="project1"
           list={["Unity", "C#"]}
           link="https://ecse-csds290.itch.io/the-purr-suit-of-the-drip-s2021-team-17"
         />

@@ -14,6 +14,7 @@ class Project3 extends Component {
           assets on a similiar github project. Except for the alien assets, all of the code was written from scratch."
 
           image={project3}
+          alt="project3"
           list={["Python 3"]}
           link="https://github.com/Errors4Days/Final_Space_Invaders"
         />

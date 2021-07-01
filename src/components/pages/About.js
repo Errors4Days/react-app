@@ -30,7 +30,7 @@ class About extends Component {
           <div className="container">
             <h2>Proficient Technologies</h2>
             <AboutCards 
-              list={["Python 3", "Java", "HTML", "CSS", "MySQL", "Unity", "React", "R"]}
+              list={["Python 3", "Java", "HTML", "CSS", "MySQL", "Unity", "React", "R", "Scheme", "Haskell"]}
             />
           </div>
         </section>

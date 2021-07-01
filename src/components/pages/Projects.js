@@ -4,7 +4,6 @@ import ImageWithText from '../ImageWithText';
 import image from '../assets/img/header-project.jpg';
 import ProjectCards from '../ProjectCards';
 
-import P1 from '../assets/img/temp.jpg';
 import project1Img from '../project-posts/img/project1.png';
 import project2Img from '../project-posts/img/project2.png';
 import project3Img from '../project-posts/img/project3.png';

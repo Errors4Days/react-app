@@ -4,7 +4,7 @@ class AboutCards extends Component{
   render() {
     return(
       <div className="card-grid-A">
-        {this.props.list.map((item) => <div className="card-A">{item}</div>)}      
+        {this.props.list.map((item) => <div className="card-A" key={item}>{item}</div>)}      
       </div>
     );
   }

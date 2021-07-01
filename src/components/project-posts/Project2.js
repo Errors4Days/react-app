@@ -14,6 +14,7 @@ class Project2 extends Component {
           The image shown below displays a full sized maze."
 
           image={project2}
+          alt="project2"
           list={["Python 3"]}
           link="https://github.com/Errors4Days/Maze-Generator.git"
         />

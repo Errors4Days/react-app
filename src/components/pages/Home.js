@@ -32,8 +32,8 @@ class Home extends Component {
             <h2>About this website</h2>
             <p>
               I built this website using the React JS framework along with HTML and CSS. Everything here is built from scratch including the 
-              navbar. On the Projects page you can a see some of my noteworthy projects. I will post some interesting bits of code
-              or random things on the Blog.
+              navbar. On the Projects page you can a see some of my noteworthy projects. I chose to use React JS for this website due
+              to React's modularity and built in features. 
             </p>
           </div>
         </section>

@@ -17,6 +17,7 @@ class Project4 extends Component {
           but Apple purchased the company and limited some features."
 
           image={project4}
+          alt="project4"
           list={["HTML", "CSS", "Javascript"]}
           link="https://errors4days.github.io/index.html"
         />
