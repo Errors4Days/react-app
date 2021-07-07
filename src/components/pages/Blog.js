@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import ImageWithText from '../ImageWithText';
 import image from '../assets/img/header-blog.jpg';
-
-//import BlogRow from '../BlogRow';
+import ToDoList from '../todo/ToDoList';
 
 class Blog extends Component {
   componentDidMount() {
@@ -18,10 +17,21 @@ class Blog extends Component {
           image={image}
           icons={false}
         />
-        <h1>
-          This section of the website is incomplete.
-        </h1>
+        <section className="textbox1">
+          <div className="container">
+            <h2>Interesting React components</h2>
+            <p>
+              This page is dedicated to exploring interesting React applications.
+            </p>
+          </div>
+        </section>
 
+        <section className="textbox2">
+          <div className="container">
+            <h2>A To-Do List</h2>
+            <ToDoList/>
+          </div>
+        </section>
       </div>
     );
   }

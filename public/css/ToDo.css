@@ -1,0 +1,37 @@
+/* ToDoList*/
+.todo-list {
+  min-height: 250px;
+  background: var(--textbk2);
+}
+
+/* ToDoForm */
+.todo-form {
+  display: inline-block;
+}
+
+.todo-input {
+  width: 250px;
+  height: 30px;
+}
+
+.todo-new {
+  height: 35px;
+  width: 35px;
+}
+
+.todo-bar {
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  justify-content: space-between;
+  background-color: var(--main1lite);
+}
+
+.todo-item {
+  margin: 8px 8px 8px 8px;
+}
+
+.todo-button {
+  display: block;
+  margin: 8px 8px 8px 8px;
+}

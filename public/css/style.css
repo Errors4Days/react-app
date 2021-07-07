@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 :root {
 	--main1: #2c2b30;
+	--main1lite:#403f47;
 	--texth1: #d6d6d6;
 	--texth1hover: #45a29e;
 	--border1: #45a29e;
@@ -54,12 +55,25 @@ body {
 }
 
 .icon {
-	color: black;
+	color: var(--textbk2);
+	size: 80px;
 }
 
 .icon:hover {
-	color: white;
+	color: var(--texth1hover);
 	cursor: pointer;
+}
+
+@media (max-width: 750px) {
+	.icons {
+		width: 400px;
+	}
+}
+
+@media (max-width: 500px) {
+	.icons {
+		width: 250px;
+	}
 }
 
 .image {
@@ -76,6 +90,7 @@ body {
 	text-align: center;
 	padding: 150px 20px 20px 20px;
 	vertical-align: middle;
+	color: var(--textbk2);	
 }
 
 .img-subtitle {
@@ -83,6 +98,7 @@ body {
 	font-weight: bold;
 	text-align: center;
 	padding: 10px;
+	color: var(--textbk2);	
 }
 
 /* About cards */
