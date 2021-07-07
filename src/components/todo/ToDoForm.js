@@ -2,9 +2,9 @@ import React, {useState} from 'react';
 import {AiOutlinePlus} from 'react-icons/ai';
 
 function ToDoForm({addToDo}) {
-  const [value, setValue] = React.useState("");
+  const [value, setValue] = useState("");
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     if (value){
       addToDo(value);
@@ -18,12 +18,15 @@ function ToDoForm({addToDo}) {
         className="todo-input"
         placeholder="Add new task here"
         type="text"
-        value={value}
         onChange={e => setValue(e.target.value)}
+        value={value}
       />
+
       <button className="todo-new">
         <AiOutlinePlus/>
       </button>
+
+      
     </form>
   );
 }

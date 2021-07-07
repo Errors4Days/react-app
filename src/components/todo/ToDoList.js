@@ -4,29 +4,30 @@ import ToDoForm from './ToDoForm';
 
 // Controlling function
 function ToDoList() {
-  const [todos, setToDos] = React.useState([
-    {text: "testing"}
-  ]);
-
-  const removeToDo = (index) => {
-    const newToDos = [...todos];
-    newToDos.splice(index, 1);
-    setToDos(newToDos);
-  };
+  const [todos, setToDos] = useState([]);
 
   const addToDo = (text) => {
     const newToDos = [...todos, {text}];
     setToDos(newToDos);
   };
 
-  const completeToDo = index => {
+  const completeToDo = (index) => {
     const newToDos = [...todos];
     newToDos[index].isComplete = !newToDos[index].isComplete;
     setToDos(newToDos);
   };
 
-  const editToDo = (index) =>{
+  const editToDo = (index, text) =>{
+    const newToDos = [...todos];
+    console.log(newToDos[index]);
+    newToDos[index].text = text;
+    setToDos(newToDos);
+  };
 
+  const removeToDo = (index) => {
+    const newToDos = [...todos];
+    newToDos.splice(index, 1);
+    setToDos(newToDos);
   };
 
   return(
@@ -39,6 +40,7 @@ function ToDoList() {
         index={index}
         todo={todo}
         completeToDo={completeToDo}
+        editToDo={editToDo}
         removeToDo={removeToDo}
       />
     ))}
