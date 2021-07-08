@@ -29,6 +29,7 @@ class Blog extends Component {
         <section className="textbox2">
           <div className="container">
             <h2>A To-Do List</h2>
+            <p>Fully interactive to-do list. Built with native React.</p>
             <ToDoList/>
           </div>
         </section>
