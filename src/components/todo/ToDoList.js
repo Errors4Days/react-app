@@ -6,11 +6,52 @@ import ToDoForm from './ToDoForm';
 function ToDoList() {
   const [todos, setToDos] = useState([]);
 
+  // Functions for todoform
   const addToDo = (text) => {
-    const newToDos = [...todos, {text}];
+    const newToDos = [...todos, {text, isComplete: false, show: true}];
     setToDos(newToDos);
   };
 
+  const clearComplete = () => {
+    var offset = 0;
+    const newToDos = [...todos];
+    for (const index in todos) {
+      if (todos[index].isComplete) {
+        newToDos.splice(index - offset, 1);
+        offset += 1;
+      }
+    };
+    console.log(newToDos);
+    setToDos(newToDos);
+  };
+
+  const selectTasks = (selection) => {
+    const newToDos = [...todos];
+    for (const index in todos) {
+      if (selection === "complete") {
+        if (newToDos[index].isComplete) {
+          newToDos[index].show = true;
+        }
+        else {
+          newToDos[index].show = false;
+        }
+      }
+      else if (selection === "uncomplete") {
+        if (newToDos[index].isComplete) {
+          newToDos[index].show = false;
+        }
+        else {
+          newToDos[index].show = true;
+        }
+      }
+      else {
+        newToDos[index].show = true;
+      }
+    }
+    setToDos(newToDos);
+  }
+
+  // Functions for todo
   const completeToDo = (index) => {
     const newToDos = [...todos];
     newToDos[index].isComplete = !newToDos[index].isComplete;
@@ -19,7 +60,7 @@ function ToDoList() {
 
   const editToDo = (index, text) =>{
     const newToDos = [...todos];
-    console.log(newToDos[index]);
+    //console.log(newToDos[index]);
     newToDos[index].text = text;
     setToDos(newToDos);
   };
@@ -32,7 +73,11 @@ function ToDoList() {
 
   return(
   <div className="todo-list">
-    <ToDoForm addToDo={addToDo}/>
+    <ToDoForm 
+      addToDo={addToDo}
+      clearComplete={clearComplete}
+      selectTasks={selectTasks}
+    />
 
     {todos.map((todo, index) => (
       <ToDo

@@ -8,7 +8,7 @@ function ToDo({todo, index, completeToDo, editToDo, removeToDo}) {
   const toggle = (e) => {
     changeEdit(!edit);
   };
-  
+
   const [value, setValue] = useState("");
 
   const handleEdit = (e, index) => {
@@ -22,9 +22,9 @@ function ToDo({todo, index, completeToDo, editToDo, removeToDo}) {
   };
 
   return(
-    <div className="todo-bar">
+    <div className="todo-bar" style={{display: todo.show ? "flex" : "none"}}>
       <div style={{display: edit ? "none" : "inherit"}}>
-        <div className="todo-item" style={{textDecoration: todo.isComplete ? "line-through" : ""}}>
+        <div className="todo-item" style={{textDecorationLine: todo.isComplete ? "line-through" : ""}}>
           {todo.text}
         </div>
       </div>

@@ -20,11 +20,15 @@
   width: 35px;
 }
 
+.todo-form-buttons {
+  height: 35px;
+}
+
 /* ToDo */
 .todo-bar {
   display: flex;
   align-items: center;
-  max-width: 600px;
+  max-width: 800px;
   justify-content: space-between;
   background-color: var(--main1lite);
 }
@@ -36,6 +40,8 @@
 
 .todo-item {
   margin: 8px 8px 8px 8px;
+  text-decoration-thickness: 4px;
+  text-decoration-color: var(--texth1hover);
 }
 
 .todo-button {
