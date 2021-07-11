@@ -46,6 +46,27 @@ body {
 
 
 /* Image with Text */
+/* 	filter: grayscale(100%) brightness(50%); */
+.image {
+	min-height: 500px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center center;
+}
+
+.img-container {
+	width: 60%;
+	margin: auto;
+	overflow: hidden;
+	padding-top: 150px;
+}
+
+.image-textbox {
+	background-color: var(--main1);
+	margin: auto auto;
+}
+
 .icons {
 	width: 500px;
 	margin: auto auto;
@@ -55,7 +76,7 @@ body {
 }
 
 .icon {
-	color: var(--textbk2);
+	color: var(--text2);
 	size: 80px;
 }
 
@@ -76,21 +97,13 @@ body {
 	}
 }
 
-.image {
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: scroll;
-	background-position: center center;
-	min-height: 500px;
-}
-
 .img-title {
 	font-size: 50px;
 	font-weight: bold;
 	text-align: center;
-	padding: 150px 20px 20px 20px;
+	padding: 0px 20px 20px 20px;
 	vertical-align: middle;
-	color: var(--textbk2);	
+	color: var(--text2);	
 }
 
 .img-subtitle {
@@ -98,7 +111,7 @@ body {
 	font-weight: bold;
 	text-align: center;
 	padding: 10px;
-	color: var(--textbk2);	
+	color: var(--text2);	
 }
 
 /* About cards */
@@ -208,4 +221,30 @@ body {
 #contact-form {
 	display: block;
 	margin: auto;
+}
+
+#contact-icons{
+	display: flex;
+	justify-content: center;
+	gap: 100px;
+}
+
+#contact-icons .icon {
+	color: var(--text1);
+}
+
+#contact-icons .icon:hover {
+	color: var(--texth1hover);
+}
+
+@media (max-width: 550px) {
+	#contact-icons {
+		gap: 25px;
+	}
+}
+
+@media (max-width: 770px) {
+	iframe {
+		width: 300px;
+	}
 }
