@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 import ScrollToTop from "./components/ScrollToTop";
 import PageWrapper from "./components/PageWrapper";
@@ -21,60 +21,62 @@ class App extends Component {
       <Router>
         <ScrollToTop/>
         <PageWrapper>
-          <Route
-            exact={true}
-            path="/"
-            component={Home}
-          />
+          <Switch>
+            <Route
+              exact={true}
+              path="/"
+              component={Home}
+            />
 
-          <Route
-            exact={true}
-            path="/about"
-            component={About}
-          />
+            <Route
+              exact={true}
+              path="/about"
+              component={About}
+            />
 
-          <Route
-            exact={true}
-            path="/projects"
-            component={Projects}
-          />
+            <Route
+              exact={true}
+              path="/projects"
+              component={Projects}
+            />
 
-          <Route
-            exact={true}
-            path="/blog"
-            component={Blog}
-          />
+            <Route
+              exact={true}
+              path="/blog"
+              component={Blog}
+            />
 
-          <Route
-            exact={true}
-            path="/contact"
-            component={Contact}
-          />
+            <Route
+              exact={true}
+              path="/contact"
+              component={Contact}
+            />
 
-          {/* Project Post routes */}
-          <Route
-            exact={true}
-            path="/projects/project1"
-            component={Project1}
-          />
+            {/* Project Post routes */}
+            <Route
+              exact={true}
+              path="/projects/project1"
+              component={Project1}
+            />
 
-          <Route
-            exact={true}
-            path="/projects/project2"
-            component={Project2}
-          />
+            <Route
+              exact={true}
+              path="/projects/project2"
+              component={Project2}
+            />
 
-          <Route
-            exact={true}
-            path="/projects/project3"
-            component={Project3}
-          />
+            <Route
+              exact={true}
+              path="/projects/project3"
+              component={Project3}
+            />
 
-          <Route
-            exact={true}
-            path="/projects/project4"
-            component={Project4}
-          />
+            <Route
+              exact={true}
+              path="/projects/project4"
+              component={Project4}
+            />
+          </Switch>
         </PageWrapper>
       </Router>
     )
