@@ -29,10 +29,10 @@ class Contact extends Component {
           </div>
 
           <iframe 
-            src="https://docs.google.com/forms/d/e/1FAIpQLScPzH6hJ02a9-Q-ObHgc6H79oGPBA1iHmPszFhYNkJLn7pVTw/viewform?embedded=true" 
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdOaI2MkRg5AgvjrrNyQ3ovLCcwtZQo7mwEnbrV_AEoZMCTlA/viewform?embedded=true"
             id="contact-form" title="contact" width="620" height="900" frameBorder="0">
               Loading…
-          </iframe>          
+          </iframe>
         </div>
       </div>
     );
