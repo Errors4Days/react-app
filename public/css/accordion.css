@@ -1,0 +1,26 @@
+.accordionButton {
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  height: 50px;
+  text-align: left;
+  background-color: var(--textbk1);
+  border: 2px solid lightgrey;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.accordionHide {
+  display: none;
+}
+
+.accordionShow {
+  display: flex;
+  border: 1px solid lightgrey;
+  border-top: none;
+}
+
+.accordionShowItem {
+  justify-content: space-between;
+  padding: 10px;
+}
